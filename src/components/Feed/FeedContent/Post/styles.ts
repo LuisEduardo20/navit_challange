@@ -8,7 +8,7 @@ export const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.grey.grey};
   padding: 1rem;
   gap: 1rem;
 
@@ -29,7 +29,7 @@ export const Header = styled.div`
     gap: 0.25rem;
 
     h4 {
-      color: red;
+      color: ${({ theme }) => theme.colors.black.dark_black};
       display: flex;
       align-items: center;
       justify-content: center;
@@ -121,7 +121,7 @@ export const MatchResult = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid cyan;
+    border: 1px solid ${({ theme }) => theme.colors.black.dark_black};
     font-size: 1.5rem;
   }
 
@@ -129,6 +129,8 @@ export const MatchResult = styled.div`
     position: absolute;
     /* border: 1px solid cyan; */
     right: 34%;
+    background-color: green;
+    border: 1px solid ${({ theme }) => theme.colors.black.dark_black};
   }
 `;
 
@@ -148,8 +150,8 @@ export const MatchInfos = styled.div`
 `;
 
 export const Social = styled.div`
-  border-top: 1px solid red;
-  border-bottom: 1px solid red;
+  border-top: 1px solid ${({ theme }) => theme.colors.grey.grey};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.grey.grey};
   padding: 1rem;
 
   display: flex;
@@ -181,9 +183,8 @@ export const Footer = styled.div`
 
   div {
     width: 100%;
-    background-color: red;
     display: flex;
-    border: 1px solid red;
+    border: 1px solid ${({ theme }) => theme.colors.grey.grey};
     border-radius: 8px;
 
     input {
@@ -199,7 +200,7 @@ export const Footer = styled.div`
       border-radius: 0 8px 8px 0;
       background-color: white;
       padding: 1rem;
-      border-left: 1px solid red;
+      border-left: 1px solid ${({ theme }) => theme.colors.grey.grey};
       cursor: pointer;
     }
   }

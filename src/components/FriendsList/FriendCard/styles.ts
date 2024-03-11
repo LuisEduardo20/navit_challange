@@ -41,10 +41,11 @@ export const Name = styled.h4`
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  ${({ theme }) => theme.colors.black.dark_black}
 `;
 
 export const Nick = styled.p`
-  color: #f00;
+  color: ${({ theme }) => theme.colors.grey.grey};
   max-width: 40px;
   font-size: 0.8rem;
   text-overflow: ellipsis;
